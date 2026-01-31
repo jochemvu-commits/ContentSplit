@@ -142,11 +142,10 @@ export default function Home() {
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`px-4 py-2 rounded-lg font-medium transition-all flex items-center gap-2 ${
-                    activeTab === tab.id
+                  className={`px-4 py-2 rounded-lg font-medium transition-all flex items-center gap-2 ${activeTab === tab.id
                       ? "bg-orange-500 text-white"
                       : "bg-gray-800 text-gray-400 hover:bg-gray-700"
-                  }`}
+                    }`}
                 >
                   <span>{tab.icon}</span>
                   {tab.label}
@@ -196,7 +195,7 @@ export default function Home() {
 
         {/* Footer */}
         <div className="text-center mt-12 text-gray-600 text-sm">
-          Built by <a href="#" className="text-orange-500 hover:underline">gymguard</a> • Powered by Claude AI
+          Built by <a href="https://twitter.com/builtwithjo" className="text-orange-500 hover:underline">builtwithjo</a> • Powered by Claude AI
         </div>
       </div>
     </main>
